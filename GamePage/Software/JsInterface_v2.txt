@@ -1,0 +1,130 @@
+
+所有的操作以软件的字符串ids作为唯一标识
+
+///////////////////////////////////////////////////////////////////////////////////
+c++ call javascript interface
+注：若未特别说明，所有的js函数返回值均为json,函数名不能改变
+//////////////////////////////////////////////////////////////////////////////////////
+
+1.1
+void OnEvent(int nEventId, int nCode, string szParam1, string szParam2)
+回调事件，比如本地配置读取完成，开始下载，下载完成
+nEvent列表如下
+enum EVENT_ID
+{
+	EVENT_ID_LOCAL_CONFIG_READY = 1, // 本地配置加载完成，网页调用接口获取安装状态
+	EVENT_ID_DOWNLOAD_START,         // 开始下载软件，szParam1为下载软件的ids
+	EVENT_ID_DOWNLOAD_END,           // 下载完成，nCode为下载状态，大于0下载成功，否则失败，szParam1为下载软件的ids
+	EVENT_ID_DELETE,                 // 从下载器里面删掉了，szParam1为下载软件的ids
+};
+
+1.2
+void OnProgress(string ids, long lTotalSize, long lDownloadSize, int nStatus)
+回调软件的下载和安装进度
+nProgress从0-100
+nStatus暂时为1，即下载进度
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+javascript call c++ interface
+//////////////////////////////////////////////////////////////////////////////////////
+
+2.1
+string GetStatus(string ids)
+获取软件的状态,返回值如下：
+[
+ {
+	"ids": "aliwangwang", //传入的ids
+	"status": 1
+ }
+]
+软件的状态值status如下
+enum SOFTWARE_STATUS
+{
+	SOFTWARE_STATUS_NOT_INSTALL = 1,
+	SOFTWARE_STATUS_DOWNLOADING,  
+	SOFTWARE_STATUS_DOWNLOAD_FAILED,
+	SOFTWARE_STATUS_INSTALLED,
+}
+
+传入参数为json格式的软件信息为数组，可以一个或多个，如下所示：
+[
+ {
+  "ids": "aliwangwang",
+  "registry_loc": [
+    {
+      "hkey": "HKEY_LOCAL_MACHINE",
+      "subkey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\aliim.exe",
+      "value": "Path",
+      "exe": "AliIM.exe"
+    },
+    {
+      "hkey": "HKEY_LOCAL_MACHINE",
+      "subkey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\aliim.exe",
+      "value": "Path",
+      "exe": "AliIM.exe"
+    }
+  ]
+ }
+]
+
+2.2
+void Download(string urls);
+网页加载完成后，下载icon，传入json参数，如下：
+[
+ {
+   "ids":"aliwangwang",
+   "icon": "http://xxxxx.png" //软件icon的url
+ }
+]
+
+2.3
+void Install(string param)
+开始安装软件,传入软件的参数，格式如下：
+[
+ {
+  "ids": "aliwangwang",
+  "soft_name": "阿里旺旺",
+  "icon": "http://p6.qhimg.com/t0149ebb449b2227966.png",
+  "registry_loc": [
+    {
+      "hkey": "HKEY_LOCAL_MACHINE",
+      "subkey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\aliim.exe",
+      "value": "Path",
+      "exe": "AliIM.exe"
+    },
+    {
+      "hkey": "HKEY_LOCAL_MACHINE",
+      "subkey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\aliim.exe",
+      "value": "Path",
+      "exe": "AliIM.exe"
+    }
+  ],
+  "360softmgrid": "352",
+  "down_url": "",
+  "md5": "",
+  "param": "",
+  "type": 1,
+  "screen_x": 258,
+  "screen_y": 785,
+  "file_size" :"7879845454545"
+  "cat": 0或者1 插件传0， 游戏传1
+ }
+]
+
+
+2.4
+void FlyIcon(string jsonParam);
+调用c++飞
+{
+	"icon_type":  1 //图标类型，有单个和多个的区分，值为ICON_TYPE
+	"icon":"http://p6.qhimg.com/t0149ebb449b2227966.png"
+	"x": 258, //icon在屏幕上的位置
+	"y": 158  //icon在屏幕上的位置
+}
+
+enum ICON_TYPE
+{
+	ICON_TYPE_SINGLE = 1,
+	ICON_TYPE_MULTI,
+}

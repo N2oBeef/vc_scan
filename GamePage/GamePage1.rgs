@@ -1,0 +1,26 @@
+HKCR
+{
+	GamePage.GamePage.1 = s 'GamePage Class'
+	{
+		CLSID = s '{36FE5880-27BC-4787-A533-348B60CC512B}'
+	}
+	GamePage.GamePage = s 'GamePage Class'
+	{
+		CLSID = s '{36FE5880-27BC-4787-A533-348B60CC512B}'
+		CurVer = s 'GamePage.GamePage.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {36FE5880-27BC-4787-A533-348B60CC512B} = s 'GamePage Class'
+		{
+			ProgID = s 'GamePage.GamePage.1'
+			VersionIndependentProgID = s 'GamePage.GamePage'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{87185829-9262-4B28-8FB0-A80E9FD73F0B}'
+		}
+	}
+}

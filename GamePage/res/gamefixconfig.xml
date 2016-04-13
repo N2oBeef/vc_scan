@@ -1,0 +1,172 @@
+{
+"gamefix": [
+{
+"name": "Microsoft VC++ 2005 x86",
+"pf": 3,
+"detecttype": 2,
+"reggroup": [
+{
+"hkey": "HKEY_LOCAL_MACHINE",
+"subkey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+"value": "DisplayName",
+"exe": "Microsoft Visual C\\+\\+ 2005 .*",
+"is64": false
+}
+],
+"360softmgrid": "100809",
+"urls": "",
+"md5": "",
+"signer": "",
+"installtype": 1,
+"runpath": "",
+"runparam": ""
+},
+{
+"name": "Microsoft VC++ 2005 x64",
+"pf": 2,
+"detecttype": 2,
+"reggroup": [
+{
+"hkey": "HKEY_LOCAL_MACHINE",
+"subkey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+"value": "DisplayName",
+"exe": "Microsoft Visual C\\+\\+ 2005 .*?x64.*",
+"is64": true
+}
+],
+"360softmgrid": "103352293",
+"urls": "",
+"md5": "",
+"signer": "",
+"installtype": 1,
+"runpath": "",
+"runparam": ""
+},
+{
+"name": "Microsoft VC++ 2008 x86",
+"pf": 3,
+"detecttype": 2,
+"reggroup": [
+{
+"hkey": "HKEY_LOCAL_MACHINE",
+"subkey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+"value": "DisplayName",
+"exe": "Microsoft Visual C\\+\\+ 2008 .*",
+"is64": false
+}
+],
+"360softmgrid": "100807",
+"urls": "",
+"md5": "",
+"signer": "",
+"installtype": 1,
+"runpath": "",
+"runparam": ""
+},
+{
+"name": "Microsoft VC++ 2008 x64",
+"pf": 2,
+"detecttype": 2,
+"reggroup": [
+{
+"hkey": "HKEY_LOCAL_MACHINE",
+"subkey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+"value": "DisplayName",
+"exe": "Microsoft Visual C\\+\\+ 2008 .*?x64.*",
+"is64": true
+}
+],
+"360softmgrid": "103352296",
+"urls": "",
+"md5": "",
+"signer": "",
+"installtype": 1,
+"runpath": "",
+"runparam": ""
+},
+{
+"name": "Microsoft VC++ 2010 x86",
+"pf": 3,
+"detecttype": 2,
+"reggroup": [
+{
+"hkey": "HKEY_LOCAL_MACHINE",
+"subkey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+"value": "DisplayName",
+"exe": "Microsoft Visual C\\+\\+ 2010 .*",
+"is64": false
+}
+],
+"360softmgrid": "103858",
+"urls": "",
+"md5": "",
+"signer": "",
+"installtype": 1,
+"runpath": "",
+"runparam": ""
+},
+{
+"name": "Microsoft VC++ 2010 x64",
+"pf": 2,
+"detecttype": 2,
+"reggroup": [
+{
+"hkey": "HKEY_LOCAL_MACHINE",
+"subkey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+"value": "DisplayName",
+"exe": "Microsoft Visual C\\+\\+ 2010 .*?x64.*",
+"is64": true
+}
+],
+"360softmgrid": "103352299",
+"urls": "",
+"md5": "",
+"signer": "",
+"installtype": 1,
+"runpath": "",
+"runparam": ""
+},
+{
+"name": "NVIDIA PhysX",
+"pf": 3,
+"detecttype": 1,
+"reggroup": [
+{
+"hkey": "HKEY_LOCAL_MACHINE",
+"subkey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{80407BA7-7763-4395-AB98-5233F1B34E65}",
+"value": "InstallLocation",
+"exe": "",
+"is64": false
+}
+],
+"360softmgrid": "102013814",
+"urls": "",
+"md5": "",
+"signer": "",
+"installtype": 1,
+"runpath": "",
+"runparam": ""
+},
+{
+"name": "OpenAL",
+"pf": 3,
+"detecttype": 1,
+"reggroup": [
+{
+"hkey": "HKEY_LOCAL_MACHINE",
+"subkey": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\OpenAL",
+"value": "DisplayIcon",
+"exe": "",
+"is64": false
+}
+],
+"360softmgrid": "100101905",
+"urls": "",
+"md5": "",
+"signer": "",
+"installtype": 1,
+"runpath": "",
+"runparam": ""
+}
+]
+}

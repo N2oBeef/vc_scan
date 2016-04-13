@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9FDBAECC-C729-498A-98FC-B3F244A9CA4B}</ProjectGuid>
+    <RootNamespace>GamePage</RootNamespace>
+    <Keyword>AtlProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)GamePage.tlb</TypeLibraryName>
+      <HeaderFileName>GamePage_i.h</HeaderFileName>
+      <DllDataFileName>
+      </DllDataFileName>
+      <InterfaceIdentifierFileName>GamePage_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>GamePage_p.c</ProxyFileName>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <RegisterOutput>true</RegisterOutput>
+      <OutputFile>C:\Program Files (x86)\Ludashi\Game\$(ProjectName).dll</OutputFile>
+      <ModuleDefinitionFile>.\GamePage.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)GamePage.tlb</TypeLibraryName>
+      <HeaderFileName>GamePage_i.h</HeaderFileName>
+      <DllDataFileName>
+      </DllDataFileName>
+      <InterfaceIdentifierFileName>GamePage_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>GamePage_p.c</ProxyFileName>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>.;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <RegisterOutput>true</RegisterOutput>
+      <ModuleDefinitionFile>.\GamePage.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="GamePage.cpp" />
+    <ClCompile Include="GamePageFactory.cpp" />
+    <ClCompile Include="HttpTaskFactory.cpp" />
+    <ClCompile Include="MainWnd.cpp" />
+    <ClCompile Include="PanelBase.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="GamePage_i.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="Base\UIThreadWindow.cpp" />
+    <ClCompile Include="Base\XThread.cpp" />
+    <ClCompile Include="Browser\DocExternalDispath.cpp" />
+    <ClCompile Include="Browser\InvokeBase.cpp" />
+    <ClCompile Include="Browser\WebbrowserView.cpp" />
+    <ClCompile Include="Helper\CharacterCodeHelper.cpp" />
+    <ClCompile Include="Helper\CommonAlgorithm.cpp" />
+    <ClCompile Include="Helper\DelayCall.cpp" />
+    <ClCompile Include="Helper\FontManager.cpp" />
+    <ClCompile Include="Helper\GdiplusInitializer.cpp" />
+    <ClCompile Include="Helper\md5.cpp" />
+    <ClCompile Include="json\cJSON.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="json\JsonHelper.cpp" />
+    <ClCompile Include="Log\Log.cpp" />
+    <ClCompile Include="Log\SmartLogger.cpp" />
+    <ClCompile Include="StartPanel\StartPanel.cpp" />
+    <ClCompile Include="ScanPanel\ScanPanel.cpp" />
+    <ClCompile Include="List\List.cpp" />
+    <ClCompile Include="List\ListItem.cpp" />
+    <ClCompile Include="Config\Configure.cpp" />
+    <ClCompile Include="GamesPanel\GamesPanel.cpp" />
+    <ClCompile Include="Software\CppInterfaceBridge.cpp" />
+    <ClCompile Include="Software\JsInterfaceBridge.cpp" />
+    <ClCompile Include="Software\SoftwareMgrWrapper.cpp" />
+    <ClCompile Include="Software\SoftwareProxy.cpp" />
+    <ClCompile Include="Engine\Engine.cpp" />
+    <ClCompile Include="Engine\EngineConfigure.cpp" />
+    <ClCompile Include="Engine\FixCallbackOnUI.cpp" />
+    <ClCompile Include="Engine\Item.cpp" />
+    <ClCompile Include="Engine\ItemDirectX.cpp" />
+    <ClCompile Include="Engine\ItemMVCRT.cpp" />
+    <ClCompile Include="Engine\ScanCallbackOnUI.cpp" />
+    <ClCompile Include="xml\tinystr.cpp" />
+    <ClCompile Include="xml\tinyxml.cpp" />
+    <ClCompile Include="xml\tinyxmlerror.cpp" />
+    <ClCompile Include="xml\tinyxmlparser.cpp" />
+    <ClCompile Include="xml\XmlParser.cpp" />
+    <ClCompile Include="p2phash\hash.cpp" />
+    <ClCompile Include="p2phash\seed.cpp" />
+    <ClCompile Include="p2phash\Sha1.cpp" />
+    <ClCompile Include="p2phash\XFile.cpp" />
+    <ClCompile Include="Statistics\Statistics.cpp" />
+    <ClCompile Include="7z\C7za.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GamePage.def" />
+    <None Include="res\gamefixconfig.xml" />
+    <None Include="GamePage.rgs" />
+    <None Include="GamePage1.rgs" />
+    <None Include="Software\JsInterface_v2.txt" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="GamePage.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_IGamePageEvents_CP.h" />
+    <ClInclude Include="dllmain.h" />
+    <ClInclude Include="dxdiag.h" />
+    <ClInclude Include="GamePage.h" />
+    <ClInclude Include="HttpTaskFactory.h" />
+    <ClInclude Include="MainWnd.h" />
+    <ClInclude Include="PanelBase.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="GamePage_i.h" />
+    <ClInclude Include="Base\ContainerT.h" />
+    <ClInclude Include="Base\Lock.h" />
+    <ClInclude Include="Base\qencrypt.h" />
+    <ClInclude Include="Base\simple_bind.h" />
+    <ClInclude Include="Base\SingletonT.h" />
+    <ClInclude Include="Base\UIThreadWindow.h" />
+    <ClInclude Include="Base\XThread.h" />
+    <ClInclude Include="Browser\DocExternalDispath.h" />
+    <ClInclude Include="Browser\IInvoke.h" />
+    <ClInclude Include="Browser\InvokeBase.h" />
+    <ClInclude Include="Browser\InvokeBoostFunction.h" />
+    <ClInclude Include="Browser\WebbrowserView.h" />
+    <ClInclude Include="Helper\CharacterCodeHelper.h" />
+    <ClInclude Include="Helper\CommonAlgorithm.h" />
+    <ClInclude Include="Helper\DelayCall.h" />
+    <ClInclude Include="Helper\FontManager.h" />
+    <ClInclude Include="Helper\GdiplusInitializer.h" />
+    <ClInclude Include="Helper\md5.h" />
+    <ClInclude Include="Include\start_wnd_id.h" />
+    <ClInclude Include="Interface\IPage.h" />
+    <ClInclude Include="Interface\IPanel.h" />
+    <ClInclude Include="json\cJSON.h" />
+    <ClInclude Include="json\JsonHelper.h" />
+    <ClInclude Include="Log\Log.h" />
+    <ClInclude Include="Log\SmartLogger.h" />
+    <ClInclude Include="StartPanel\StartPanel.h" />
+    <ClInclude Include="ScanPanel\ScanPanel.h" />
+    <ClInclude Include="List\IItem.h" />
+    <ClInclude Include="List\IList.h" />
+    <ClInclude Include="List\List.h" />
+    <ClInclude Include="List\ListItem.h" />
+    <ClInclude Include="Config\Configure.h" />
+    <ClInclude Include="GamesPanel\GamesPanel.h" />
+    <ClInclude Include="Software\CppInterfaceBridge.h" />
+    <ClInclude Include="Software\ICppInterfaceBridge.h" />
+    <ClInclude Include="Software\IJsInterfaceBridge.h" />
+    <ClInclude Include="Software\ISoftwareMgrWrapper.h" />
+    <ClInclude Include="Software\ISoftwareProxy.h" />
+    <ClInclude Include="Software\JsInterfaceBridge.h" />
+    <ClInclude Include="Software\SoftwareMgrWrapper.h" />
+    <ClInclude Include="Software\SoftwareProxy.h" />
+    <ClInclude Include="Engine\Engine.h" />
+    <ClInclude Include="Engine\EngineConfigure.h" />
+    <ClInclude Include="Engine\FixCallbackOnUI.h" />
+    <ClInclude Include="Engine\IEngine.h" />
+    <ClInclude Include="Engine\Item.h" />
+    <ClInclude Include="Engine\ItemDirectX.h" />
+    <ClInclude Include="Engine\ItemMVCRT.h" />
+    <ClInclude Include="Engine\ScanCallbackOnUI.h" />
+    <ClInclude Include="xml\tinystr.h" />
+    <ClInclude Include="xml\tinyxml.h" />
+    <ClInclude Include="xml\XmlParser.h" />
+    <ClInclude Include="Net\IHttpTask.h" />
+    <ClInclude Include="p2phash\hash.h" />
+    <ClInclude Include="p2phash\seed.h" />
+    <ClInclude Include="p2phash\Sha1.h" />
+    <ClInclude Include="p2phash\XDefine.h" />
+    <ClInclude Include="p2phash\XDefine_windows.h" />
+    <ClInclude Include="p2phash\XFile.h" />
+    <ClInclude Include="Statistics\Statistics.h" />
+    <ClInclude Include="7z\7za.h" />
+    <ClInclude Include="7z\C7za.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GamePage.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

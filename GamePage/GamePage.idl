@@ -1,0 +1,49 @@
+// GamePage.idl : IDL source for GamePage
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (GamePage.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "PageEntry.idl";
+
+[
+	object,
+	uuid(16D6B55D-496E-4E66-81E0-DEE29A1AF76E),
+	dual,
+	nonextensible,
+	helpstring("IGamePage Interface"),
+	pointer_default(unique)
+]
+interface IGamePage : IPageEntry{
+};
+[
+	uuid(87185829-9262-4B28-8FB0-A80E9FD73F0B),
+	version(1.0),
+	helpstring("GamePage 1.0 Type Library")
+]
+library GamePageLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(E2E5F724-F233-451A-8D69-457EC602D5FA),
+		helpstring("_IGamePageEvents Interface")
+	]
+	dispinterface _IGamePageEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(36FE5880-27BC-4787-A533-348B60CC512B),
+		helpstring("GamePage Class")
+	]
+	coclass GamePage
+	{
+		[default] interface IGamePage;
+				interface IPageEntry;
+		[source] dispinterface _IPageEntryEvents;
+		[default, source] dispinterface _IGamePageEvents;
+	};
+};

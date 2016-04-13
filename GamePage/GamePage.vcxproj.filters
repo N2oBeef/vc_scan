@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{429d9541-cd80-4a94-89e9-f3645e59f1e4}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{731f54a3-7d03-4ecb-bc29-829b6ee5e0da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Browser">
+      <UniqueIdentifier>{45acd39b-b53e-4e77-bef6-f6633be4fbb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{31ed2a40-3d23-4eb8-ac58-0c765a03aede}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{223de854-19c7-479a-ba2a-fc40ae98ffbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{4367dce1-b2e6-46eb-b6a1-811422fb4ec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{0f96f745-5e4f-458a-876b-bca3f19c1e24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Log">
+      <UniqueIdentifier>{bb0b0307-fcc6-496b-9d5f-8a88ba7fbc1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StartPanel">
+      <UniqueIdentifier>{7878e42f-5c34-4115-9f3d-103b1ffd7028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScanPanel">
+      <UniqueIdentifier>{7a461725-d584-4019-9b58-8ddd5b62e3e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="List">
+      <UniqueIdentifier>{cce315c2-782b-40f6-9af6-3a979706e021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{10367edd-5add-44dd-95af-3e6e955b10fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GamesPanel">
+      <UniqueIdentifier>{f6a4d0cf-d770-41f7-bb5f-319d9d00ff07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Software">
+      <UniqueIdentifier>{ac252c7d-a208-461e-990c-6415a6942300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{a51f7be1-211c-4b02-b497-adfcbe197327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml">
+      <UniqueIdentifier>{afdfbea1-c263-4995-aa09-aba9d3d4c9f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net">
+      <UniqueIdentifier>{6f4ab704-d53f-4d7a-9700-9c0a10a126e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="p2phash">
+      <UniqueIdentifier>{03f029d6-3c17-4ca2-815e-222b4344cad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Statistics">
+      <UniqueIdentifier>{52353133-74b9-4aab-8cf0-d268906976e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="7z">
+      <UniqueIdentifier>{4afaad32-9e38-4e24-ad36-583d319f1978}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePageFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpTaskFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PanelBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePage_i.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\UIThreadWindow.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\XThread.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Browser\DocExternalDispath.cpp">
+      <Filter>Base\Browser</Filter>
+    </ClCompile>
+    <ClCompile Include="Browser\InvokeBase.cpp">
+      <Filter>Base\Browser</Filter>
+    </ClCompile>
+    <ClCompile Include="Browser\WebbrowserView.cpp">
+      <Filter>Base\Browser</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\CharacterCodeHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\CommonAlgorithm.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\DelayCall.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\FontManager.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\GdiplusInitializer.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\md5.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="json\cJSON.c">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\JsonHelper.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="Log\Log.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="Log\SmartLogger.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="StartPanel\StartPanel.cpp">
+      <Filter>StartPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanPanel\ScanPanel.cpp">
+      <Filter>ScanPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="List\List.cpp">
+      <Filter>List</Filter>
+    </ClCompile>
+    <ClCompile Include="List\ListItem.cpp">
+      <Filter>List</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\Configure.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="GamesPanel\GamesPanel.cpp">
+      <Filter>GamesPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="Software\CppInterfaceBridge.cpp">
+      <Filter>Software</Filter>
+    </ClCompile>
+    <ClCompile Include="Software\JsInterfaceBridge.cpp">
+      <Filter>Software</Filter>
+    </ClCompile>
+    <ClCompile Include="Software\SoftwareMgrWrapper.cpp">
+      <Filter>Software</Filter>
+    </ClCompile>
+    <ClCompile Include="Software\SoftwareProxy.cpp">
+      <Filter>Software</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Engine.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\EngineConfigure.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\FixCallbackOnUI.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Item.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\ItemDirectX.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\ItemMVCRT.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\ScanCallbackOnUI.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\tinystr.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxml.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxmlerror.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxmlparser.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\XmlParser.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="p2phash\hash.cpp">
+      <Filter>p2phash</Filter>
+    </ClCompile>
+    <ClCompile Include="p2phash\seed.cpp">
+      <Filter>p2phash</Filter>
+    </ClCompile>
+    <ClCompile Include="p2phash\Sha1.cpp">
+      <Filter>p2phash</Filter>
+    </ClCompile>
+    <ClCompile Include="p2phash\XFile.cpp">
+      <Filter>p2phash</Filter>
+    </ClCompile>
+    <ClCompile Include="Statistics\Statistics.cpp">
+      <Filter>Statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\C7za.cpp">
+      <Filter>7z</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GamePage.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\gamefixconfig.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="GamePage.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="GamePage1.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Software\JsInterface_v2.txt">
+      <Filter>Software</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="GamePage.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_IGamePageEvents_CP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dxdiag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpTaskFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PanelBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePage_i.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ContainerT.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Lock.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\qencrypt.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\simple_bind.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\SingletonT.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\UIThreadWindow.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\XThread.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Browser\DocExternalDispath.h">
+      <Filter>Base\Browser</Filter>
+    </ClInclude>
+    <ClInclude Include="Browser\IInvoke.h">
+      <Filter>Base\Browser</Filter>
+    </ClInclude>
+    <ClInclude Include="Browser\InvokeBase.h">
+      <Filter>Base\Browser</Filter>
+    </ClInclude>
+    <ClInclude Include="Browser\InvokeBoostFunction.h">
+      <Filter>Base\Browser</Filter>
+    </ClInclude>
+    <ClInclude Include="Browser\WebbrowserView.h">
+      <Filter>Base\Browser</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\CharacterCodeHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\CommonAlgorithm.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\DelayCall.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\FontManager.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\GdiplusInitializer.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\md5.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\start_wnd_id.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\IPage.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\IPanel.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="json\cJSON.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\JsonHelper.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="Log\Log.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Log\SmartLogger.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="StartPanel\StartPanel.h">
+      <Filter>StartPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanPanel\ScanPanel.h">
+      <Filter>ScanPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="List\IItem.h">
+      <Filter>List</Filter>
+    </ClInclude>
+    <ClInclude Include="List\IList.h">
+      <Filter>List</Filter>
+    </ClInclude>
+    <ClInclude Include="List\List.h">
+      <Filter>List</Filter>
+    </ClInclude>
+    <ClInclude Include="List\ListItem.h">
+      <Filter>List</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Configure.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="GamesPanel\GamesPanel.h">
+      <Filter>GamesPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="Software\CppInterfaceBridge.h">
+      <Filter>Software</Filter>
+    </ClInclude>
+    <ClInclude Include="Software\ICppInterfaceBridge.h">
+      <Filter>Software</Filter>
+    </ClInclude>
+    <ClInclude Include="Software\IJsInterfaceBridge.h">
+      <Filter>Software</Filter>
+    </ClInclude>
+    <ClInclude Include="Software\ISoftwareMgrWrapper.h">
+      <Filter>Software</Filter>
+    </ClInclude>
+    <ClInclude Include="Software\ISoftwareProxy.h">
+      <Filter>Software</Filter>
+    </ClInclude>
+    <ClInclude Include="Software\JsInterfaceBridge.h">
+      <Filter>Software</Filter>
+    </ClInclude>
+    <ClInclude Include="Software\SoftwareMgrWrapper.h">
+      <Filter>Software</Filter>
+    </ClInclude>
+    <ClInclude Include="Software\SoftwareProxy.h">
+      <Filter>Software</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Engine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\EngineConfigure.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\FixCallbackOnUI.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\IEngine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Item.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ItemDirectX.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ItemMVCRT.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ScanCallbackOnUI.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\tinystr.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\tinyxml.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\XmlParser.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\IHttpTask.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="p2phash\hash.h">
+      <Filter>p2phash</Filter>
+    </ClInclude>
+    <ClInclude Include="p2phash\seed.h">
+      <Filter>p2phash</Filter>
+    </ClInclude>
+    <ClInclude Include="p2phash\Sha1.h">
+      <Filter>p2phash</Filter>
+    </ClInclude>
+    <ClInclude Include="p2phash\XDefine.h">
+      <Filter>p2phash</Filter>
+    </ClInclude>
+    <ClInclude Include="p2phash\XDefine_windows.h">
+      <Filter>p2phash</Filter>
+    </ClInclude>
+    <ClInclude Include="p2phash\XFile.h">
+      <Filter>p2phash</Filter>
+    </ClInclude>
+    <ClInclude Include="Statistics\Statistics.h">
+      <Filter>Statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\7za.h">
+      <Filter>7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\C7za.h">
+      <Filter>7z</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GamePage.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
